@@ -26,3 +26,66 @@
 </body>
 </html>
 <script type='text/javascript' src='//pl25731256.profitablecpmrate.com/12/33/9d/12339d8b5845a253458a7b4f097592e9.js'></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Ad Example</title>
+ <center>   <style>
+        /* Popup container */
+        #popup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 320px;
+            height: 250px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        /* Close button */
+        #closeBtn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #closeBtn:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Popup Ad -->
+    <div id="popup">
+        <button id="closeBtn" onclick="closePopup()">X</button>
+        
+        <p><!-- AdsTargets - Ad Display Code -->
+<div id="adm-container-28447"></div><script data-cfasync="false" async type="text/javascript" src="//adstargets.com/myAdstargets/display/items.php?28447&8384&300&250&4&0&0"></script>
+<!-- AdsTargets - Ad Display Code --></p>
+    </div>
+
+    <script>
+        // Show the popup after 3 seconds
+        setTimeout(function() {
+            document.getElementById('popup').style.display = 'block';
+        }, 3000);
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
